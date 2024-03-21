@@ -1,0 +1,106 @@
+[
+  {
+    "WidgetId": "container",
+    "Props": {
+      "attributes": {
+        "class": "overflow-hidden backdrop-opacity-80 h-screen flex flex-col gap-4 items-center justify-center bg-cyan-900"
+      },
+      "children": [
+        {
+          "WidgetId": "typography",
+          "Props": {
+            "tag": "h1",
+            "attributes": {
+              "class": "animate__animated animate__bounceIn text-center w-4/5 text-4xl text-teal-100 font-[system-ui]"
+            },
+            "text": "Victor Santos"
+          }
+        },
+        {
+          "WidgetId": "typography",
+          "Props": {
+            "tag": "img",
+            "attributes": {
+              "class": "animate__animated animate__backInDown h-52 w-52 object-cover rounded-full shadow-md",
+              "src": "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+              "alt": "Foto de perfil"
+            },
+            "text": ""
+          }
+        },
+        {
+          "WidgetId": "typography",
+          "Props": {
+            "tag": "p",
+            "attributes": {
+              "class": "animate__animated animate__bounceIn text-center w-4/5 text-teal-100 font-[system-ui]"
+            },
+            "text": "Realizo sites entre muitas outras coisas durante meu tempo livre!"
+          }
+        },
+        {
+          "WidgetId": "typography",
+          "Props": {
+            "tag": "button",
+            "text": "Sobre",
+            "attributes": {
+              "type": "button",
+              "class": "animate__animated animate__fadeInLeft ripple w-4/5 max-w-lg bg-teal-300 hover:bg-teal-400 font-semibold text-zinc-200 h-10 rounded-md transition-all outline outline-1 outline-transparent outline-offset-0 focus:outline-offset-2 focus:outline-yellow-500 shadow-md hover:-mr-8",
+              "href": "/sobre"
+            }
+          }
+        },
+        {
+          "WidgetId": "container",
+          "Props": {
+            "attributes": {
+              "class": "flex flex-col w-full items-center justify-center h-auto gap-4"
+            },
+            "children": [
+              {
+                "WidgetId": "typography",
+                "Props": {
+                  "tag": "a",
+                  "attributes": {
+                    "class": "animate__animated animate__fadeInLeft ripple flex items-center justify-center text-center text-teal-300 w-4/5 max-w-lg border border-1 border-teal-300 hover:bg-teal-300 font-semibold hover:text-zinc-200 hover:-translate-y-6 h-10 rounded-md transition-all outline outline-1 outline-transparent outline-offset-0 focus:outline-offset-2 focus:outline-yellow-500 shadow-md hover:-mr-8",
+                    "style": "--animation-delay: 0.2s;",
+                    "title": "Hello World",
+                    "href": "/contato"
+                  },
+                  "text": "Contato"
+                }
+              },
+              {
+                "WidgetId": "typography",
+                "Props": {
+                  "tag": "a",
+                  "attributes": {
+                    "style": "--animation-delay: 0.4s;",
+                    "class": "animate__animated animate__fadeInLeft ripple relative flex items-center justify-start text-center text-teal-300 w-4/5 max-w-lg border border-1 border-teal-300 hover:bg-teal-300 font-semibold hover:text-zinc-200 h-10 rounded-md transition-all outline outline-1 outline-transparent outline-offset-0 focus:outline-offset-2 focus:outline-yellow-500 shadow-md hover:-mr-8"
+                  },
+                  "tagAttributes": {
+                    "class": "absolute w-full h-full flex items-center justify-center",
+                    "href": "/localizacao",
+                    "title": "Localização"
+                  },
+                  "text": "Localização",
+                  "leftIcon": "<svg class='absolute left-8' xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'><mask id='lineMdMapMarkerAltFilled0'><path fill='#fff' stroke='#fff' stroke-linecap='round' stroke-width='2' d='M12 20.5C12 20.5 6 13.5 6 9C6 5.68629 8.68629 3 12 3C15.3137 3 18 5.68629 18 9C18 13.5 12 20.5 12 20.5z'><animate fill='freeze' attributeName='d' dur='0.4s' keyTimes='0;0.7;1' values='M12 20.5C12 20.5 11 19 11 18C11 17.5 11.5 17 12 17C12.5 17 13 17.5 13 18C13 19 12 20.5 12 20.5z;M12 20.5C12 20.5 5 13 5 8C5 4.5 8 1 12 1C16 1 19 4.5 19 8C19 13 12 20.5 12 20.5z;M12 20.5C12 20.5 6 13.5 6 9C6 5.68629 8.68629 3 12 3C15.3137 3 18 5.68629 18 9C18 13.5 12 20.5 12 20.5z'/></path><circle cx='12' cy='9' r='2.5' fill-opacity='0'><animate fill='freeze' attributeName='fill-opacity' begin='0.3s' dur='0.15s' values='0;1'/></circle></mask><rect width='24' height='24' fill='currentColor' mask='url(#lineMdMapMarkerAltFilled0)'/></svg>"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "WidgetId": "typography",
+          "Props": {
+            "tag": "span",
+            "attributes": {
+              "class": "animate__animated animate__backInUp absolute bottom-2 text-teal-100"
+            },
+            "text": "Made with ❤️ by Marcos Paulo "
+          }
+        }
+      ]
+    }
+  }
+]

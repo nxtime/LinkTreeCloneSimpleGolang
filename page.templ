@@ -1,0 +1,46 @@
+package main
+
+templ heading() {
+	<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+	  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="data:" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link 
+      href="https://cdn.jsdelivr.net/npm/css-ripple-effect@1.0.5/dist/ripple.min.css" 
+      rel="stylesheet"
+    />
+    <style>:root{--animation-delay: 0s;}.animate__animated{animation-delay: var(--animation-delay)}</style>
+  </head>
+}
+
+templ layout(widgets []Component, style string) {
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+    @heading()
+    <body>
+      @getWidgets(widgets)
+    </body>
+  </html>
+}
+
+templ getWidgets(widgets []Component) {
+  for _, widget := range widgets {
+    switch widget.WidgetId {
+      case "container":
+        @container("Test", widget.Props.Attributes, widget.Props.Children)
+      case "typography":
+        @typography(widget.Props.Text, widget.Props.Tag, widget.Props.Attributes)
+      default:
+        <span>Widget Not Found</span>
+    }
+  }
+}

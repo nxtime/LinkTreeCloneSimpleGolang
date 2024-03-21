@@ -1,0 +1,5 @@
+package main
+
+templ typography(text string, tag string, attrs templ.Attributes) {
+  @templ.Raw("<"+tag +" "+ attrToString(attrs) + ">" + text + "</"+tag+">")
+}

@@ -1,0 +1,7 @@
+package main
+
+templ container(widgetId string, attrs templ.Attributes, components []Component) {
+  <div data-widgetId={ widgetId } { attrs... }>
+     @getWidgets(components)
+  </div>
+}
